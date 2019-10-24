@@ -47,6 +47,7 @@
                         <li><a title="accesorios" href="#">Accesorios</a></li>
                     </ul>
                 </div>
+            </div>
         </nav>
     </header>
     <!-- - - - - - - - - - -->
@@ -94,27 +95,33 @@
             </ul>
         </div>
 
-        <!--  Menú Secundario -->
-        <nav class="footerNav">
+         <!-- Menú Secundario -->
+         <nav class="footerNav">
+             <ul>
+                    <li><a title="avisoLegal" href="#">Aviso Legal </a></li>
+                    <li><a title="politicasPriv" href="#">Políticas de Privacidad </a></li>
+                    <li><a title="bajaNewsletter" href="#">Baja Newsletter </a></li>
+             </ul>
+         </nav>
+        <!-- <nav class="footerNav">
             <a title="avisoLegal" href="#">Aviso Legal </a>
             <a title="politicasPriv" href="#">Políticas de Privacidad </a>
             <a title="bajaNewsletter" href="#">Baja Newsletter </a>
-        </nav>
+        </nav> -->
 
     </footer>
     <!-- - - - - - - - - - -->
 
     <!-- --- Cookies --- -->
-    <div class="cookies">
-        <button class="btn1">X</button>
+    <div class="cookies" id="cookies">
+        <button id="btn1" onclick="cierre()" class="btn1">X</button>
         <p>Utilizamos "cookies propias y de terceros para elaborar información estadística y mostrarles publicidad
-            personalizada a través del análisis de su navegacíon. <button class="btn2"> Acepto</button><a href="">Más
+            personalizada a través del análisis de su navegacíon. <button onclick="cierre()" id="btn2" class="btn2"> Acepto</button><a href="#">Más
                 informacíon y políticas de cookies</a></p>
     </div>
     <!-- - - - - - - - - - -->
 
     <!-- --- Scripts --- -->
-    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <!-- - - - - - - - - - -->
-
 </body>
