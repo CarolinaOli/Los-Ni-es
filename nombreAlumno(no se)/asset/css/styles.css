@@ -32,8 +32,9 @@
 /* --- Contenido de Página --- */
 
 body {
-    width: 100%;
+    /* width: 100%; */
     background-color: #d9d9d6;
+    /* height:1000px; */
 }
 body{
 	background-color: #C3B7BC;
@@ -141,6 +142,8 @@ body{
 /* --- Pie de Página --- */
 
 footer {
+    /* margin-bottom: 0px; */
+    /* top:100%; */
     background-color: rgb(54, 48, 46);
     text-align: center;
 }
@@ -162,14 +165,19 @@ footer {
     list-style: none;
 }
 
-.footerNav {
-    display: block;
+.footerNav{
+    background-color: #53565A;
+    padding-top: 30px;
+}
+.footerNav li{    
+    display: inline-block;
 }
 
-.footerNav a {
+.footerNav li a {
     text-decoration: none;
-    padding: 0 4px;
+    margin:10px;
     color: white;
+    /* display: block; */
 }
 
 /*  Menú Secundario */
@@ -180,7 +188,6 @@ footer {
 
 .cookies {
     position: fixed;
-    bottom: 0;
     text-align: center;
     font-size: 15px;
     background-color: rgba(149, 148, 148, 0.5);
