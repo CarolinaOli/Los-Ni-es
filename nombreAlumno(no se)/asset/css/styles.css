@@ -35,9 +35,59 @@ body {
     width: 100%;
     background-color: #d9d9d6;
 }
+body{
+	background-color: #C3B7BC;
+
+}
 
 /* Selección de Categoría */
+.contenedor{
+	display: flex;
+	height: 500px;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	background-color: #DADADA;
+	padding: 30px;
+}
 
+.contenido{
+	background-color: green;
+	height: 455px;
+	width: 25%;
+	background-color: #C8C9C7;
+	padding: 10px;
+	margin-right: 10px;
+	flex: 1;
+
+}
+
+.contenido h2{
+	text-align: center;
+	width: 100%;
+	height: 5px;
+}
+
+.contenido img{
+	width: 75%;
+	height: 300px;
+	padding: 40px;
+}
+
+.contenido button{
+	margin-left: 45px; 
+	width: 70%;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #5F4028;
+	font-family: "times new roma";
+	border: none;
+	border-radius: 100px;
+}
+.contenido button a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+}
 /* Newsletter */
 
 .contenedorBoletin {
