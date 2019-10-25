@@ -31,23 +31,51 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="asset/img/Mazo.png" height="50" width="140"></a>
-        </div>
-        <div class="menuu">
-            <ul clas="ulmenu">
-                <li class="person"><a class="amenu" title="Niño" href="#">Niño</a>
-                    <ul class="ulsubmenu">
-                        <li class="ropa"><a class="amenu" title="Camisa" href="#">Camisa</li>
-                        <li class="ropa"><a class="amenu" title="Pantalon" href="#">Pantalon</li>
-                        <li class="ropa"><a class="amenu" title="Falda" href="#">Falda</li>
-                        <li class="ropa"><a class="amenu" title="Zapato" href="#">Zapato</li>
-                    </ul></li>
-                <li class="person"><a class="amenu" title="Mujer" href="#">Mujer</a></li>
-                <li class="person"><a class="amenu" title="Hombre" href="#">Hombre</a></li>
-                <li class="person"><a class="amenu" title="Accesorios" href="#">Accesorios</a></li>
-            </ul>
+    <!-- --- Menú Principal --- -->
+    <header>
+        <nav>
+            <div>
+                <div class="logo">
+                    <a href="index.html"><img src="asset/img/Mazo.png"></a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a title="niño" href="#">Niño</a></li>
+                        <li><a title="mujer" href="#">Mujer</a></li>
+                        <li><a title="hombre" href="#">Hombre</a></li>
+                        <li><a title="accesorios" href="#">Accesorios</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <!-- - - - - - - - - - -->
+
+    <!-- --- Contenido de Página --- -->
+    <main>
+        <!-- Selección de Categoría -->
+        <div class="contenedor">
+
+            <div class="contenido">
+                <h2>MODA NIÑO</h2>
+                <img src="asset/img/ninos.jpg">
+                <button><a href="index.html"> VER MÁS</a></button>
+            </div>
+            <div class="contenido">
+                <h2>MODA MUJER</h2>
+                <img src="asset/img/mujer.jpg">
+                <button><a href="index.html"> VER MÁS</a></button>
+            </div>
+            <div class="contenido">
+                <h2>MODA HOMBRE</h2>
+                <img src="asset/img/hombre.png">
+                <button><a href="index.html"> VER MÁS</a></button>
+            </div>
+            <div class="contenido">
+                <h2>ACCESORIOS</h2>
+                <img src="asset/img/accesorios.png">
+                <button><a href="index.html"> VER MÁS</a></button>
+            </div>
         </div>
             
             <!-- Newsletter -->
@@ -67,7 +95,15 @@
     <!-- --- Pie de Página --- -->
     <footer>
 
-        
+        <!-- Métodos de Pago -->
+        <div class="contenedor_footer">
+            <h3>FORMAS DE PAGO</h3>
+            <ul class="lista_footer">
+                <li><i class="fab fa-paypal"></i>PayPal</li>
+                <li><i class="fab fa-cc-visa"></i>Visa</li>
+                <li><i class="fab fa-cc-mastercard"></i>MasterCard</li>
+            </ul>
+        </div>
 
         <!-- Formas de Envío -->
         <div class="contenedor_footer">

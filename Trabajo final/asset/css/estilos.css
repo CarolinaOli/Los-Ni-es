@@ -22,21 +22,19 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 /* --------FIN-estilos generales--------- */
-
 /* --------Body-------------- */
 
 body {
     /* width: 100%; */
     background-color: #d9d9d6;
     height: auto;
-}
 
+}
 /* --------FIN-body--------- */
 
- --- Menú Principal --- Edu arreglar
-nav{
+/* --- Menú Principal --- Edu arreglar
+header nav{
 	background-color: #C3B7BC;
 	width: 100%;
 	height: 60px;
@@ -54,7 +52,7 @@ nav{
 	margin-left: 15px;
 	font-weight:bold;
 }
-.menuu{
+.menu{
 	margin:0 0 0 550px;
 	list-style-type: none;
 }
@@ -91,7 +89,7 @@ nav{
 	text-align: left;
 }
 
-.amenu{
+header a{
 	text-decoration: none;
 	color: black;
 }
@@ -100,58 +98,59 @@ nav{
 /* --- Main --- */
 
 /* Selección de Categoría */
+.contenedor{
+	display: flex;
+	height: auto;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	background-color: #DADADA;
+	padding: 30px;
+}
 
-.contenedor {
-    display: flex;
+.contenido{
     height: auto;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
-    background-color: #DADADA;
-    padding: 30px;
+    overflow:clip;
+	background-color: green;
+	width: 25%;
+	background-color: #C8C9C7;
+	padding: 10px;
+	margin-right: 10px;
+	flex: 1;
+
 }
 
-.contenido {
-    height: auto;
-    overflow: clip;
-    background-color: green;
-    width: 25%;
-    background-color: #C8C9C7;
-    padding: 10px;
-    margin-right: 10px;
-    flex: 1;
+.contenido h2{
+	text-align: center;
+	width: 100%;
+	height: 5px;
 }
 
-.contenido h2 {
-    text-align: center;
-    width: 100%;
-    height: 5px;
+.contenido img{
+	width: 90%;
+	height: 500px;
+	padding: 40px;
 }
 
-.contenido img {
-    width: 90%;
-    height: 500px;
-    padding: 40px;
-}
-
-.contenido button {
+.contenido button{
     cursor: pointer;
-    margin-left: 45px;
-    width: 70%;
-    height: 30px;
-    color: #FFFFFF;
-    background-color: #5F4028;
-    font-family: "times new roma";
-    border: none;
-    border-radius: 100px;
+	margin-left: 45px; 
+	width: 70%;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #5F4028;
+	font-family: "times new roma";
+	border: none;
+	border-radius: 100px;
 }
 
-.contenido button:hover {
-    background-color: rgba(95, 64, 40, 0.8);
+.contenido button:hover{
+    background-color:  rgba(95, 64, 40, 0.8);
 }
 
-.contenido button a {
-    text-decoration: none;
-    color: #FFFFFF;
+.contenido button a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
 }
 
 /* ---------FIN-Seleccion-------- */
@@ -205,7 +204,6 @@ nav{
 }
 
 /* - - - - -FIN-NS - - - - */
-
 /* --------FIN-Main--------- */
 
 /* --- Pie de Página --- */
@@ -235,27 +233,22 @@ footer {
 }
 
 /* FIN -Métodos de Pago - Formas de Envío */
-
 /* ----Aceeso a paginas------ */
-
-.footerEnlaces {
-    padding-top: 2rem;
-    background-color: #53565A;
+.footerEnlaces{
+    padding-top:2rem;
+    background-color:#53565A;
     display: block;
 }
-
-.footerEnlaces li {
+.footerEnlaces li{
     display: inline;
 }
-
-.footerEnlaces a {
+.footerEnlaces a{
     text-decoration: none;
     padding: 0 4px;
-    color: white;
+    color:white;
+
 }
-
 /*  FIN-Acceso a paginas */
-
 /* - - - -FIN-footer - - - - - */
 
 /* --- Cookies --- */
