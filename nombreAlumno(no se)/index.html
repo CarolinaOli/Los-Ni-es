@@ -22,7 +22,7 @@
     <!-- --- Estilos --- -->
 
     <!-- Estilos Generales-->
-    <link rel=" stylesheet" type="text/css" href="asset/css/styles.css">
+    <link rel=" stylesheet" type="text/css" href="asset/css/estilos.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="asset/css/all.css">
@@ -76,20 +76,19 @@
                 <img src="asset/img/accesorios.png">
                 <button><a href="index.html"> VER MÁS</a></button>
             </div>
+        </div>
             
             <!-- Newsletter -->
-            <section>
                 <!-- Aca empieza el newsletter( de ahora en mas boletin je) -->
-                <div class="contenedorBoletin">
-                    <h2>ÚNETE A NUESTRA NEWSLETTER</h2>
-                    <form class="formulario" action="" method="POST">
-                        <!-- A este input, al de email les diria que lo comenten mientras programan por que cada vez que refresquen
-                    la pagina para ver los cambios les va asalir un cartel re molesto -->
-                        <input type="email" placeholder="Insertar su e-mail" title="Campo de email">
-                        <input type="submit" value="Suscribirse" title="Boton para confirmacion de suscripcion">
-                    </form>
-                </div>
-            </section>
+            <div class="contenedorBoletin">
+                <h2>ÚNETE A NUESTRA NEWSLETTER</h2>
+                <form class="formulario" action="" method="POST">
+                    <!-- A este input, al de email les diria que lo comenten mientras programan por que cada vez que refresquen
+                la pagina para ver los cambios les va asalir un cartel re molesto -->
+                    <input type="email" placeholder="Insertar su e-mail" title="Campo de email">
+                    <input type="submit" value="Suscribirse" title="Boton para confirmacion de suscripcion">
+                </form>
+            </div>
     </main>
     <!-- - - - - - - - - - -->
 
@@ -117,11 +116,13 @@
         </div>
 
         <!--  Menú Secundario -->
-        <nav class="footerNav">
-            <a title="avisoLegal" href="#">Aviso Legal </a>
-            <a title="politicasPriv" href="#">Políticas de Privacidad </a>
-            <a title="bajaNewsletter" href="#">Baja Newsletter </a>
-        </nav>
+        <div class="footerEnlaces">
+            <ul>
+                <li><a title="avisoLegal" href="#">Aviso Legal </a></li>
+                <li><a title="politicasPriv" href="#">Políticas de Privacidad </a></li>
+                <li><a title="bajaNewsletter" href="#">Baja Newsletter </a></li>
+            </ul>
+        </div>
 
     </footer>
     <!-- - - - - - - - - - -->
@@ -129,9 +130,7 @@
     <!-- --- Cookies --- -->
     <div class="cookies" id="cookies">
         <button id="btn1" onclick="cierre()" class="btn1">X</button>
-        <p>Utilizamos "cookies propias y de terceros para elaborar información estadística y mostrarles publicidad
-            personalizada a través del análisis de su navegacíon. <button onclick="cierre()" id="btn2" class="btn2"> Acepto</button><a href="#">Más
-                informacíon y políticas de cookies</a></p>
+        <p>Utilizamos "cookies propias y de terceros para elaborar información estadística y mostrarles publicidad personalizada a través del análisis de su navegacíon. <button onclick="cierre()" id="btn2" class="btn2"> Acepto</button><a href="#">Más informacíon y políticas de cookies</a></p>
     </div>
     <!-- - - - - - - - - - -->
 
@@ -139,3 +138,4 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <!-- - - - - - - - - - -->
 </body>
+</html>
