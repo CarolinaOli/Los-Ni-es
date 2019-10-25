@@ -37,8 +37,9 @@ body {
 /* ----Header--- */
 header{
     color:black;
+    /* text-align: center; */
     /* margin: auto; */
-    height:100px;
+    /* height:100px; */
     width: 100%;
     background-color:#c3b7bc;
     position: fixed;
@@ -48,24 +49,30 @@ header{
 /* --- Menú Principal --- */
 
 .nav{
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li{
+    margin:100px;
 }
 
 .logoMazo{
     /* display: inline-block; */
     width: 150px;
     margin: 10px;
+    float:left;
     /* height: auto; */
-    position: absolute;
+    /* position: absolute; */
 }
 
 .nav ul{
-    position: relative;
-    left:500px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 
 .nav ul a{
     display:block;
