@@ -1,0 +1,282 @@
+/* --- Estilos Generales --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Esto sirve para que las cajas tomen el valor que le
+    damos sin necesidad de estar sumando el paddin
+    por ejemplo, si tenemos una seccion de 500px
+    y le coloco a la derecha con float:left
+    un article de width:300px mas un paddin:20px
+    me quedan 200px(sin las tres lineas de abajo quedarian
+    160px a la izquierda) nos van a sobrar 200px a la
+    izquierda, donde se puede agregar un aside con 
+    float:rigth width:200px paddin:20px 
+    (((((((importante: si
+    hacen lo anterior tener en cuenta que en la siguiente
+    estructura sea de linea o bloque tienen que colocar
+    clear:both)))))))
+    Si no lo entienden y no les deja hacer lo que quieren
+    hacer solo comenten las de abajo */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* --------FIN-estilos generales--------- */
+/* --------Body-------------- */
+
+body {
+    /* width: 100%; */
+    background-color: #d9d9d6;
+    height: auto;
+
+}
+/* --------FIN-body--------- */
+
+/* --- Menú Principal --- Edu arreglar
+header nav{
+	background-color: #C3B7BC;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	position:fixed;
+	z-index: 999;
+}
+
+.logo{
+	float: left;
+	font-size: 25px;
+	margin-left: 15px;
+	font-weight:bold;
+}
+.menu{
+	margin:0 0 0 550px;
+	list-style-type: none;
+}
+.ulmenu {
+   margin:0 0 0 0;
+}
+.ulsubmenu{
+	text-align: center;
+	padding: 0;
+}
+
+.person { 
+	float: left;
+	padding: 10px 11px 10px 11px;
+	text-align: center;
+	list-style: none;	
+}
+
+.person:hover {
+	background-color: grey;
+}
+
+.person:hover .ropa{
+	display: block;
+
+}
+
+.ropa{
+	display: none;
+	list-style: none;
+}
+
+.ropa li{
+	text-align: left;
+}
+
+header a{
+	text-decoration: none;
+	color: black;
+}
+/* - - - -Fin -Menu Principal - - - - - */
+
+/* --- Main --- */
+
+/* Selección de Categoría */
+.contenedor{
+	display: flex;
+	height: auto;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	background-color: #DADADA;
+	padding: 30px;
+}
+
+.contenido{
+    height: auto;
+    overflow:clip;
+	background-color: green;
+	width: 25%;
+	background-color: #C8C9C7;
+	padding: 10px;
+	margin-right: 10px;
+	flex: 1;
+
+}
+
+.contenido h2{
+	text-align: center;
+	width: 100%;
+	height: 5px;
+}
+
+.contenido img{
+	width: 90%;
+	height: 500px;
+	padding: 40px;
+}
+
+.contenido button{
+    cursor: pointer;
+	margin-left: 45px; 
+	width: 70%;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #5F4028;
+	font-family: "times new roma";
+	border: none;
+	border-radius: 100px;
+}
+
+.contenido button:hover{
+    background-color:  rgba(95, 64, 40, 0.8);
+}
+
+.contenido button a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+}
+
+/* ---------FIN-Seleccion-------- */
+
+/* -----Newsletter-------- */
+
+.contenedorBoletin {
+    margin: 35px auto 25px auto;
+    width: 30%;
+    /* background-color: red; */
+}
+
+.contenedorBoletin h2 {
+    margin-bottom: 10%;
+    text-align-last: justify;
+}
+
+.contenedorBoletin input[type="email"], input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 15px auto 0 auto;
+}
+
+.contenedorBoletin input[type="email"] {
+    border-style: none;
+    padding: 1px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+}
+
+.contenedorBoletin input[type="email"]:focus {
+    border-bottom: 2px solid black;
+    /*Las 5 lineas de abajo estan para quitarle el borde azul que se pone cuando hacemos focus en un input*/
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.contenedorBoletin input[type="submit"] {
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contenedorBoletin input[type="submit"]:hover {
+    background-color: rgba(80, 80, 80, 0.63);
+}
+
+/* - - - - -FIN-NS - - - - */
+/* --------FIN-Main--------- */
+
+/* --- Pie de Página --- */
+
+footer {
+    /* margin-bottom: 0px; */
+    /* top:100%; */
+    background-color: rgb(54, 48, 46);
+    text-align: center;
+}
+
+/* Métodos de Pago - Formas de Envío */
+
+.contenedor_footer {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 2rem 10rem;
+    width: auto;
+    color: white;
+    /*position: relative;    
+    width: 100%;
+    height: 100px;*/
+}
+
+.lista_footer {
+    list-style: none;
+}
+
+/* FIN -Métodos de Pago - Formas de Envío */
+/* ----Aceeso a paginas------ */
+.footerEnlaces{
+    padding-top:2rem;
+    background-color:#53565A;
+    display: block;
+}
+.footerEnlaces li{
+    display: inline;
+}
+.footerEnlaces a{
+    text-decoration: none;
+    padding: 0 4px;
+    color:white;
+
+}
+/*  FIN-Acceso a paginas */
+/* - - - -FIN-footer - - - - - */
+
+/* --- Cookies --- */
+
+.cookies {
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(149, 148, 148, 0.5);
+    width: 100%;
+    height: 50px;
+    z-index: 99999;
+}
+
+.cookies p {
+    position: relative;
+    top: 50%;
+}
+
+.btn1 {
+    margin: 10px;
+    float: right;
+}
+
+.btn2 {
+    border-style: none;
+    background-color: rgba(15, 90, 65, 0.815);
+}
+
+/* - - - - -FIN-Cookies - - - - */
