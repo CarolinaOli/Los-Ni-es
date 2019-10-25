@@ -1,188 +1,170 @@
-/* --- Estilos Generales --- */
+/* Estilos Generales*/
 
 * {
     margin: 0;
     padding: 0;
-    /* Esto sirve para que las cajas tomen el valor que le
-    damos sin necesidad de estar sumando el paddin
-    por ejemplo, si tenemos una seccion de 500px
-    y le coloco a la derecha con float:left
-    un article de width:300px mas un paddin:20px
-    me quedan 200px(sin las tres lineas de abajo quedarian
-    160px a la izquierda) nos van a sobrar 200px a la
-    izquierda, donde se puede agregar un aside con 
-    float:rigth width:200px paddin:20px 
-    (((((((importante: si
-    hacen lo anterior tener en cuenta que en la siguiente
-    estructura sea de linea o bloque tienen que colocar
-    clear:both)))))))
-    Si no lo entienden y no les deja hacer lo que quieren
-    hacer solo comenten las de abajo */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-/* --------FIN-estilos generales--------- */
-/* --------Body-------------- */
 
-body {
-    /* width: 100%; */
-    margin-top:8%;
-    background-color: #d9d9d6;
-    height: auto;
+/* - - - - - - - - - */
 
-}
-/* --------FIN-body--------- */
-/* ----Header--- */
-header{
-    color:black;
+/* --- Encabezado --- */
+
+header {
+    color: black;
     /* text-align: center; */
     /* margin: auto; */
     /* height:100px; */
     width: 100%;
-    background-color:#c3b7bc;
+    background-color: #c3b7bc;
     position: fixed;
-    top:0%;
+    top: 0%;
 }
-/* ----Fin Header */
-/* --- Menú Principal --- */
 
-.nav{
-    padding-top:2%;
+/* Menú Principal */
+
+.nav {
+    padding-top: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav ul li{
-    margin:100px;
+.nav ul li {
+    margin: 100px;
 }
 
-.logoMazo{
+.logoMazo {
     /* display: inline-block; */
     width: 150px;
     margin: 10px;
-    float:left;
+    float: left;
     /* height: auto; */
     /* position: absolute; */
 }
 
-.nav ul{
+.nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-
-.nav ul a{
-    display:block;
+.nav ul a {
+    display: block;
     /* color:#fff; */
-    text-decoration:none;
+    text-decoration: none;
     color: white;
     /* font-weight:400; */
     /* font-size:15px; */
-    padding:10px;
-    text-transform:uppercase;
-    letter-spacing:1px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.nav ul li{
+.nav ul li {
     position: relative;
-    float:left;
+    float: left;
     margin: 0;
     padding: 0;
 }
 
-.nav ul li:hover{
+.nav ul li:hover {
     background-color: grey;
 }
 
-.nav ul ul{
-    display:none;
+.nav ul ul {
+    display: none;
     position: absolute;
-    top:100%;
-    left:0;
+    top: 100%;
+    left: 0;
     padding: 0;
 }
 
-.nav ul ul li{
-    float:none;
+.nav ul ul li {
+    float: none;
     width: 150px;
 }
 
-.nav ul ul a{
+.nav ul ul a {
     padding: 10px 15px;
 }
 
-.nav ul li:hover > ul{
+.nav ul li:hover>ul {
     display: block;
-    background-color:#c3b7bc;
-    border:1px solid rgba(131, 128, 128, 0.527)
+    background-color: #c3b7bc;
+    border: 1px solid rgba(131, 128, 128, 0.527)
 }
-/* - - - -Fin -Menu Principal - - - - - */
 
-/* --- Main --- */
+/* - - - - - - - - - */
+
+/* --- Contenido de Página --- */
+
+body {
+    /* width: 100%; */
+    margin-top: 8%;
+    background-color: #d9d9d6;
+    height: auto;
+}
 
 /* Selección de Categoría */
-.contenedor{
-	display: flex;
-	height: auto;
-	flex-direction: row;
-	/*flex-wrap: wrap;*/
-	background-color: #DADADA;
-	padding: 30px;
-}
 
-.contenido{
+.contenedor {
+    display: flex;
     height: auto;
-    overflow:clip;
-	background-color: green;
-	width: 25%;
-	background-color: #C8C9C7;
-	padding: 10px;
-	margin-right: 10px;
-	flex: 1;
-
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    background-color: #DADADA;
+    padding: 30px;
 }
 
-.contenido h2{
-	text-align: center;
-	width: 100%;
-	height: 5px;
+.contenido {
+    height: auto;
+    overflow: clip;
+    background-color: green;
+    width: 25%;
+    background-color: #C8C9C7;
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
 }
 
-.contenido img{
-	width: 90%;
-	height: 500px;
-	padding: 40px;
+.contenido h2 {
+    text-align: center;
+    width: 100%;
+    height: 5px;
 }
 
-.contenido button{
+.contenido img {
+    width: 90%;
+    height: 500px;
+    padding: 40px;
+}
+
+.contenido button {
     cursor: pointer;
-	margin-left: 45px; 
-	width: 70%;
-	height: 30px;
-	color: #FFFFFF;
-	background-color: #5F4028;
-	font-family: "times new roma";
-	border: none;
-	border-radius: 100px;
+    margin-left: 45px;
+    width: 70%;
+    height: 30px;
+    color: #FFFFFF;
+    background-color: #5F4028;
+    font-family: "times new roma";
+    border: none;
+    border-radius: 100px;
 }
 
-.contenido button:hover{
-    background-color:  rgba(95, 64, 40, 0.8);
+.contenido button:hover {
+    background-color: rgba(95, 64, 40, 0.8);
 }
 
-.contenido button a{
-	text-decoration: none;
-	color: #FFFFFF;
-	
+.contenido button a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-/* ---------FIN-Seleccion-------- */
-
-/* -----Newsletter-------- */
+/* Newsletter */
 
 .contenedorBoletin {
     margin: 35px auto 25px auto;
@@ -230,8 +212,7 @@ header{
     background-color: rgba(80, 80, 80, 0.63);
 }
 
-/* - - - - -FIN-NS - - - - */
-/* --------FIN-Main--------- */
+/* - - - - - - - - - */
 
 /* --- Pie de Página --- */
 
@@ -259,24 +240,25 @@ footer {
     list-style: none;
 }
 
-/* FIN -Métodos de Pago - Formas de Envío */
-/* ----Aceeso a paginas------ */
-.footerEnlaces{
-    padding-top:2rem;
-    background-color:#53565A;
+/*  Menú Secundario - Otras páginas de interés */
+
+.footerEnlaces {
+    padding-top: 2rem;
+    background-color: #53565A;
     display: block;
 }
-.footerEnlaces li{
+
+.footerEnlaces li {
     display: inline;
 }
-.footerEnlaces a{
+
+.footerEnlaces a {
     text-decoration: none;
     padding: 0 4px;
-    color:white;
-
+    color: white;
 }
-/*  FIN-Acceso a paginas */
-/* - - - -FIN-footer - - - - - */
+
+/* - - - - - - - - - */
 
 /* --- Cookies --- */
 
@@ -306,4 +288,4 @@ footer {
     background-color: rgba(15, 90, 65, 0.815);
 }
 
-/* - - - - -FIN-Cookies - - - - */
+/* - - - - - - - - - */
